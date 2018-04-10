@@ -86,7 +86,7 @@
 
 /**
  A convenience initializer that returns layout attributes with the same property values as the specified layout attributes, or nil of initialization fails.
- @param The existing layout attributes.
+ @param existing layout attributes.
  @return Layout attributes with the same property values as the specified layout attributes, or nil of initialization fails.
  */
 - (instancetype)initWithExistingLayoutAttributes:(BLKFlexibleHeightBarSubviewLayoutAttributes *)layoutAttributes;
