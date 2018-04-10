@@ -53,26 +53,24 @@
 /**
  Add a progress position that the bar will snap to whenever a user stops scrolling and the bar's current progress falls within the specified progress range.
  @param progress position that the bar will snap to.
- @param range of progress percents (between 0.0 and 1.0 inclusive) that will cause the bar to snap to the specified `progressPosition.`
  */
 - (void)addSnappingPositionProgress:(CGFloat)progress forProgressRangeStart:(CGFloat)start end:(CGFloat)end;
 
 /**
  Removes the progress position corresponding to the specified progress range.
- @param range of progress percents (between 0.0 and 1.0 inclusive) that correspond with the `progressPosition` that is to be removed.
  */
 - (void)removeSnappingPositionProgressForProgressRangeStart:(CGFloat)start end:(CGFloat)end;
 
 /**
  Snap to the specified progress position.
  @param progress position that the bar will snap to.
- @param UIScrollView whose offset will be adjusted during the snap.
+ @param scrollView whose offset will be adjusted during the snap.
  */
 - (void)snapToProgress:(CGFloat)progress scrollView:(UIScrollView *)scrollView;
 
 /**
  Snap to the appropriate progress position based on the bar's current progress and the currently defined snapping position progresses.
- @param UIScrollView whose offset will be adjusted during the snap.
+ @param scrollView whose offset will be adjusted during the snap.
  */
 - (void)snapWithScrollView:(UIScrollView *)scrollView;
 

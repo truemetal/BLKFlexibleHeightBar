@@ -31,7 +31,6 @@
 
 /**
  Add layout attributes that correspond to a progress value.
- @param layout attributes that the receiver wants to be applied to itself.
  @param progress value (between 0.0 and 1.0 inclusive) that the receiver's containing `BLKFlexibleHeightBar` instance will use to decide which layout attributes to apply.
  */
 - (void)addLayoutAttributes:(BLKFlexibleHeightBarSubviewLayoutAttributes *)layoutAttributes forProgress:(CGFloat)progress;
